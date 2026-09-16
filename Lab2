@@ -1,0 +1,40 @@
+while True:
+    a = input("Логін: ")
+    b = input("Пароль: ")
+
+    if a == "student1" and b == "1234":
+        c = [12, 10, 8, 4, 7]
+
+    elif a == "student2" and b == "qwerty":
+        c = [5, 6, 3, 4, 9]
+
+    elif a == "student3" and b == "abcd":
+        c = [12, 11, 10, 8, 2]
+
+    elif a == "student4" and b == "pass123":
+        c = [4, 3, 6, 8, 9]
+
+    else:
+        print("Неправильний логін або пароль")
+        print("Спробуйте ще раз")
+        continue
+
+    print("Оцінки:", c)
+
+    d = 0
+    e = 0
+    f = 0
+
+    while f < 5:
+        if c[f] >= 5 and c[f] <= 12:
+            d = d + 1
+
+        elif c[f] >= 1 and c[f] <= 4:
+            e = e + 1
+
+        f = f + 1
+
+    print("Задовільних:", d)
+    print("Незадовільних:", e)
+
+    break
