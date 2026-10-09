@@ -95,7 +95,8 @@ def remove_from_cart():
 def buy_products():
     if not cart:
         print("\nКошик порожній.")
-
+        return
+        
     show_cart()
 
     confirmation = input(
