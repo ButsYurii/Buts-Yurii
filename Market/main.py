@@ -46,3 +46,6 @@ while True:
 
     else:
         print("Невірний пункт меню. Спробуйте ще раз!")
+
+if __name__ == "__main__":
+    main()
